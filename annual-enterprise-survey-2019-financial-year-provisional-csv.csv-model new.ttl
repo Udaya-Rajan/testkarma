@@ -1,0 +1,268 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix karma: <http://isi.edu/integration/karma/ontologies/model/current#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1esi962fvx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "annual-enterprise-survey-2019-financial-year-provisional-csv.csv" ;
+	km-dev:modelPublicationTime "1611226352128"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"Industry_code_ANZSIC06\"}],[{\"columnName\":\"Year\"}],[{\"columnName\":\"Industry_aggregation_NZSIOC\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"Industry_code_ANZSIC06\"}],[{\"columnName\":\"Year\"}],[{\"columnName\":\"Industry_aggregation_NZSIOC\"}]]" ;
+	km-dev:hasModelLabel "annual-enterprise-survey-2019-financial-year-provisional-csv.csv" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Year\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://isi.edu/integration/karma/ontologies/model/current#annual-enterprise-survey-2019-financial-year-provisional-csv.csv\",
+                    \"DomainId\": \"http://isi.edu/integration/karma/ontologies/model/current#annual-enterprise-survey-2019-financial-year-provisional-csv.csv1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/ontologies/model/current#Year\",
+                    \"DomainLabel\": \"karma:annual-enterprise-survey-2019-financial-year-provisional-csv.csv1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Year\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Year\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Industry_aggregation_NZSIOC\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://isi.edu/integration/karma/ontologies/model/current#annual-enterprise-survey-2019-financial-year-provisional-csv.csv\",
+                    \"DomainId\": \"http://isi.edu/integration/karma/ontologies/model/current#annual-enterprise-survey-2019-financial-year-provisional-csv.csv1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/ontologies/model/current#Industry_aggregation_NZSIOC\",
+                    \"DomainLabel\": \"karma:annual-enterprise-survey-2019-financial-year-provisional-csv.csv1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Industry_aggregation_NZSIOC\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Industry_aggregation_NZSIOC\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Industry_code_ANZSIC06\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://isi.edu/integration/karma/ontologies/model/current#annual-enterprise-survey-2019-financial-year-provisional-csv.csv\",
+                    \"DomainId\": \"http://isi.edu/integration/karma/ontologies/model/current#annual-enterprise-survey-2019-financial-year-provisional-csv.csv1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/ontologies/model/current#Industry_code_NZSIOC\",
+                    \"DomainLabel\": \"karma:annual-enterprise-survey-2019-financial-year-provisional-csv.csv1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Industry_code_ANZSIC06\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Industry_code_ANZSIC06\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    }
+]""" .
+
+km-dev:TriplesMap_62f189b8-d8e0-4f52-a838-be8007bc30d0 a rr:TriplesMap .
+
+_:node1esi962fvx1 km-dev:hasTriplesMap km-dev:TriplesMap_62f189b8-d8e0-4f52-a838-be8007bc30d0 .
+
+km-dev:TriplesMap_62f189b8-d8e0-4f52-a838-be8007bc30d0 km-dev:isPartOfMapping _:node1esi962fvx1 .
+
+_:node1esi962fvx2 rr:tableName "annual-enterprise-survey-2019-financial-year-provisional-csv.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1esi962fvx1 .
+
+_:node1esi962fvx1 km-dev:hasLogicalTable _:node1esi962fvx2 .
+
+km-dev:TriplesMap_62f189b8-d8e0-4f52-a838-be8007bc30d0 rr:logicalTable _:node1esi962fvx2 ;
+	rr:subjectMap _:node1esi962fvx3 .
+
+_:node1esi962fvx1 km-dev:hasSubjectMap _:node1esi962fvx3 .
+
+_:node1esi962fvx3 km-dev:isPartOfMapping _:node1esi962fvx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://isi.edu/integration/karma/ontologies/model/current#annual-enterprise-survey-2019-financial-year-provisional-csv.csv1" ;
+	rr:class <http://isi.edu/integration/karma/ontologies/model/current#annual-enterprise-survey-2019-financial-year-provisional-csv.csv> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "karma:annual-enterprise-survey-2019-financial-year-provisional-csv.csv1" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_b569fbdf-cde6-4254-b4eb-e76256c734c2 rr:predicate karma:Industry_code_NZSIOC .
+
+_:node1esi962fvx4 rr:column "Industry_code_ANZSIC06" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1esi962fvx1 .
+
+_:node1esi962fvx1 km-dev:hasObjectMap _:node1esi962fvx4 .
+
+km-dev:PredicateObjectMap_b569fbdf-cde6-4254-b4eb-e76256c734c2 rr:objectMap _:node1esi962fvx4 .
+
+km-dev:TriplesMap_62f189b8-d8e0-4f52-a838-be8007bc30d0 rr:predicateObjectMap km-dev:PredicateObjectMap_b569fbdf-cde6-4254-b4eb-e76256c734c2 .
+
+km-dev:PredicateObjectMap_b569fbdf-cde6-4254-b4eb-e76256c734c2 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1esi962fvx1 .
+
+_:node1esi962fvx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b569fbdf-cde6-4254-b4eb-e76256c734c2 .
+
+km-dev:PredicateObjectMap_2f1a2017-c25a-43f2-84e8-0732432b7c90 rr:predicate karma:Industry_aggregation_NZSIOC .
+
+_:node1esi962fvx5 rr:column "Industry_aggregation_NZSIOC" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1esi962fvx1 .
+
+_:node1esi962fvx1 km-dev:hasObjectMap _:node1esi962fvx5 .
+
+km-dev:PredicateObjectMap_2f1a2017-c25a-43f2-84e8-0732432b7c90 rr:objectMap _:node1esi962fvx5 .
+
+km-dev:TriplesMap_62f189b8-d8e0-4f52-a838-be8007bc30d0 rr:predicateObjectMap km-dev:PredicateObjectMap_2f1a2017-c25a-43f2-84e8-0732432b7c90 .
+
+km-dev:PredicateObjectMap_2f1a2017-c25a-43f2-84e8-0732432b7c90 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1esi962fvx1 .
+
+_:node1esi962fvx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_2f1a2017-c25a-43f2-84e8-0732432b7c90 .
+
+km-dev:PredicateObjectMap_ad356e01-eb8c-4228-aa46-038a4cd03aa6 rr:predicate karma:Year .
+
+_:node1esi962fvx6 rr:column "Year" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1esi962fvx1 .
+
+_:node1esi962fvx1 km-dev:hasObjectMap _:node1esi962fvx6 .
+
+km-dev:PredicateObjectMap_ad356e01-eb8c-4228-aa46-038a4cd03aa6 rr:objectMap _:node1esi962fvx6 .
+
+km-dev:TriplesMap_62f189b8-d8e0-4f52-a838-be8007bc30d0 rr:predicateObjectMap km-dev:PredicateObjectMap_ad356e01-eb8c-4228-aa46-038a4cd03aa6 .
+
+km-dev:PredicateObjectMap_ad356e01-eb8c-4228-aa46-038a4cd03aa6 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1esi962fvx1 .
+
+_:node1esi962fvx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ad356e01-eb8c-4228-aa46-038a4cd03aa6 .
